@@ -24,7 +24,6 @@ export default function HomePage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        // brand="Material Kit React"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -41,7 +40,7 @@ export default function HomePage(props) {
               <h4>
                 Promovemos ações especializadas de inclusão social do
                 usuário/dependente de drogas psicoativas, provocando mudanças de
-                mudanças de valores, com humanização e desenvolvimento pessoal.
+                valores, com humanização e desenvolvimento pessoal.
               </h4>
               <br />
             </GridItem>

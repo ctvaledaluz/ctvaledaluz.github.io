@@ -23,7 +23,7 @@ export default function VisaoGeralSection() {
               SASIEQ (Serviço de Ação Social, Integração, Educação e Qualidade)
             </b>{" "}
             de Joinville - SC e tem como objetivo o acolhimento e reabilitação
-            de dependentes químicos, químicos.
+            de dependentes de álcool e drogas.
           </h5>
         </GridItem>
       </GridContainer>
@@ -32,7 +32,7 @@ export default function VisaoGeralSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Ação"
-              description="Promover ações especializadas de inclusão e/ou reinclusão social do usuário/ dependente/ de drogas psicoativas."
+              description="Promover ações especializadas de inclusão e/ou reinclusão social do usuário/dependente de drogas psicoativas."
               icon={Chat}
               iconColor="info"
               vertical
