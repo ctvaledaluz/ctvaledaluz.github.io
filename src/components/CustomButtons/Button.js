@@ -10,10 +10,10 @@ import Button from "@material-ui/core/Button";
 
 // core components
 
-import buttonStyle from "assets/jss/material-kit-react/components/buttonStyle.js";
+import buttonStyle from "assets/jss/site-styles/components/buttonStyle.js";
 
 const makeComponentStyles = makeStyles(() => ({
-  ...buttonStyle
+  ...buttonStyle,
 }));
 
 const RegularButton = React.forwardRef((props, ref) => {
@@ -67,7 +67,7 @@ RegularButton.propTypes = {
     "twitter",
     "google",
     "github",
-    "transparent"
+    "transparent",
   ]),
   size: PropTypes.oneOf(["sm", "lg"]),
   simple: PropTypes.bool,

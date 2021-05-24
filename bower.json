@@ -1,19 +1,19 @@
 {
-  "name": "material-kit-react",
-  "homepage": "https://github.com/creativetimofficial/material-kit-react",
+  "name": "vale-da-luz-site",
+  "homepage": "https://je4npw.github.io/vdl",
   "authors": [
-    "creative-tim"
+    "Je4nPw"
   ],
-  "description": "A Badass Material-UI Kit based on Material Design",
+  "description": "Site da Comunidade Terapêutica Vale da Luz",
   "main": "dist/index.js",
   "keywords": [
-    "material",
-    "design",
-    "material-ui",
-    "google",
-    "twitter"
+    "comunidade",
+    "terapêutica",
+    "vale",
+    "da luz",
+    "recuperacao"
   ],
-  "license": "Creative TIM License",
+  "license": "Open Software",
   "ignore": [
     "**/.*",
     "node_modules",

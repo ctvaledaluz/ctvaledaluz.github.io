@@ -14,7 +14,7 @@ import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
-import styles from "assets/jss/material-kit-react/components/headerStyle.js";
+import styles from "assets/jss/site-styles/components/headerStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -53,14 +53,14 @@ export default function Header(props) {
         .classList.remove(classes[changeColorOnScroll.color]);
     }
   };
-  const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+  const { color, rightLinks, leftLinks, fixed, absolute } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
     [classes.absolute]: absolute,
     [classes.fixed]: fixed,
   });
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent = <Button className={classes.title}> </Button>;
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
@@ -128,12 +128,6 @@ Header.propTypes = {
   brand: PropTypes.string,
   fixed: PropTypes.bool,
   absolute: PropTypes.bool,
-  // this will cause the sidebar to change the color from
-  // props.color (see above) to changeColorOnScroll.color
-  // when the window.pageYOffset is higher or equal to
-  // changeColorOnScroll.height and then when it is smaller than
-  // changeColorOnScroll.height change it back to
-  // props.color (see above)
   changeColorOnScroll: PropTypes.shape({
     height: PropTypes.number.isRequired,
     color: PropTypes.oneOf([
