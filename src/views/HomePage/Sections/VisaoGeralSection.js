@@ -31,7 +31,7 @@ export default function VisaoGeralSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Ação"
+              title="Atuação"
               description="Promover ações especializadas de inclusão e/ou reinclusão social do usuário/dependente de drogas psicoativas."
               icon={Chat}
               iconColor="info"

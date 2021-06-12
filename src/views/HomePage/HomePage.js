@@ -10,9 +10,8 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/site-styles/views/HomePage.js";
 import VisaoGeralSection from "./Sections/VisaoGeralSection.js";
 import LocalSection from "./Sections/LocalSection.js";
-// import WorkSection from "./Sections/WorkSection.js";
-
-const dashboardRoutes = [];
+import TeamSection from "./Sections/TeamSection.js";
+import WorkSection from "./Sections/WorkSection";
 
 const useStyles = makeStyles(styles);
 
@@ -23,7 +22,6 @@ export default function HomePage(props) {
     <div>
       <Header
         color="transparent"
-        routes={dashboardRoutes}
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -51,7 +49,8 @@ export default function HomePage(props) {
         <div className={classes.container}>
           <VisaoGeralSection />
           <LocalSection />
-          {/*<WorkSection />*/}
+          <TeamSection />
+          <WorkSection />
         </div>
       </div>
       <Footer />
