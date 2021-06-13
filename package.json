@@ -1,9 +1,9 @@
 {
-  "name": "material-kit-react",
+  "name": "site-ct-vdl",
   "version": "1.9.0",
   "description": "Site da Comunidade Terapêutica Vale da Luz",
-  "homepage": "https://je4npw.github.io/vdl/",
-  "private": true,
+  "homepage": "https://valedaluzct.github.io/site/",
+  "private": false,
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "4.10.0",
