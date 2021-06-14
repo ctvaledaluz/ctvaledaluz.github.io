@@ -24,25 +24,25 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      {/*<ListItem className={classes.listItem}>*/}
-      {/*  <CustomDropdown*/}
-      {/*    noLiPadding*/}
-      {/*    buttonText="Páginas"*/}
-      {/*    buttonProps={{*/}
-      {/*      className: classes.navLink,*/}
-      {/*      color: "transparent"*/}
-      {/*    }}*/}
-      {/*    buttonIcon={Apps}*/}
-      {/*    dropdownList={[*/}
-      {/*      <Link to="/" className={classes.dropdownLink}>*/}
-      {/*        Início*/}
-      {/*      </Link>,*/}
-      {/*      <Link to="/" className={classes.dropdownLink}>*/}
-      {/*        Sobre*/}
-      {/*      </Link>,*/}
-      {/*    ]}*/}
-      {/*  />*/}
-      {/*</ListItem>*/}
+      <ListItem className={classes.listItem}>
+        <CustomDropdown
+          noLiPadding
+          buttonText="Páginas"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          buttonIcon={Apps}
+          dropdownList={[
+            <Link to="/" className={classes.dropdownLink}>
+              Início
+            </Link>,
+            <Link to="/history" className={classes.dropdownLink}>
+              Sobre
+            </Link>,
+          ]}
+        />
+      </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           title="Contato por Whatsapp"
@@ -90,6 +90,22 @@ export default function HeaderLinks(props) {
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-instagram"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          title="Localização"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="https://www.google.com.br/maps/place/Comunidade+Terap%C3%AAutica+Vale+da+Luz/@-26.2951579,-49.0139024,14z/data=!4m5!3m4!1s0x0:0x25c0a454a236bc26!8m2!3d-26.2951575!4d-49.0139072"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fa fa-map-marker"} /> Localização
           </Button>
         </Tooltip>
       </ListItem>

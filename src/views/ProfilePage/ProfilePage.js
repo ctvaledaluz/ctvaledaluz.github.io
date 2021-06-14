@@ -97,7 +97,8 @@ export default function ProfilePage() {
                 Os programas de atendimento aos usuários de substancias
                 psicoativas da Comunidade Terapêutica Vale da Luz, atende à
                 comunidade de todo território nacional. A instituição atualmente
-                tem 36 (trinta e seis) vagas
+                tem 36 (trinta e seis) vagas masculinas para homens da idade de
+                18 a 55 anos.
               </p>
               <h3>Como faço para internar?</h3>
               <h4>Admissão</h4>

@@ -17,7 +17,7 @@ export default function WorkSection() {
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem cs={12} sm={12} md={12}>
-            <h2 className={classes.title}>Gostaria de saber mais?</h2>
+            <h2 className={classes.title}>Gostaria de saber mais informações?</h2>
             <h4 className={classes.description}>
               Entre em contato pelo nosso WhatsApp:
             </h4>
