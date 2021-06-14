@@ -5,14 +5,14 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image1 from "assets/img/1.JPG";
-import image2 from "assets/img/2.JPG";
-import image3 from "assets/img/3.JPG";
-import image4 from "assets/img/4.JPG";
-import image7 from "assets/img/7.JPG";
-import image9 from "assets/img/9.JPG";
-import image10 from "assets/img/10.JPG";
-import image11 from "assets/img/11.JPG";
+import image1 from "assets/img/1.webp";
+import image2 from "assets/img/2.webp";
+import image3 from "assets/img/3.webp";
+import image4 from "assets/img/4.webp";
+import image7 from "assets/img/7.webp";
+import image9 from "assets/img/9.webp";
+import image10 from "assets/img/10.webp";
+import image11 from "assets/img/11.webp";
 
 import styles from "assets/jss/site-styles/views/componentsSections/carouselStyle.js";
 
@@ -76,13 +76,21 @@ export default function SectionCarousel() {
                   </div>
                 </div>
                 <div>
-                  <img src={image10} alt="Third slide" className="slick-image" />
+                  <img
+                    src={image10}
+                    alt="Third slide"
+                    className="slick-image"
+                  />
                   <div className="slick-caption">
                     <h4>Visão panorâmica</h4>
                   </div>
                 </div>
                 <div>
-                  <img src={image11} alt="Third slide" className="slick-image" />
+                  <img
+                    src={image11}
+                    alt="Third slide"
+                    className="slick-image"
+                  />
                   <div className="slick-caption">
                     <h4>Visão panorâmica</h4>
                   </div>

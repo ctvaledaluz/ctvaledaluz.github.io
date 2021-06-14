@@ -26,3 +26,9 @@ yarn-error.log*
 /dist
 # compiled css
 *.css
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/modules.xml
+/.idea/codeStyles/Project.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/site.iml
+/.idea/vcs.xml

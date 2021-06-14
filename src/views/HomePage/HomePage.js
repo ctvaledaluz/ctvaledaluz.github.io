@@ -15,9 +15,8 @@ import WorkSection from "./Sections/WorkSection";
 
 const useStyles = makeStyles(styles);
 
-export default function HomePage(props) {
+export default function HomePage() {
   const classes = useStyles();
-  const { ...rest } = props;
   return (
     <div>
       <Header
@@ -28,9 +27,8 @@ export default function HomePage(props) {
           height: 400,
           color: "dark",
         }}
-        {...rest}
       />
-      <Parallax filter image={require("assets/img/head-img.jpg")}>
+      <Parallax filter image={require("assets/img/head-img.webp")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -48,7 +46,11 @@ export default function HomePage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <VisaoGeralSection />
-          <LocalSection />
+        </div>
+      </div>
+      <LocalSection />
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classes.container}>
           <TeamSection />
           <WorkSection />
         </div>
