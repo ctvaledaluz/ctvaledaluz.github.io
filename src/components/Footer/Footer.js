@@ -12,6 +12,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Telegram from "@material-ui/icons/Telegram";
 
 import styles from "assets/jss/site-styles/components/footerStyle.js";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(styles);
 
@@ -32,20 +33,15 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="/"
-                className={classes.block}
-              >
+              <Link to="/">
                 Comunidade Terapêutica Vale Da Luz
-              </a>
+              </Link>
             </ListItem>
+            {' | '}
             <ListItem className={classes.inlineBlock}>
-              <a
-                href=""
-                className={classes.block}
-              >
+              <Link to="/history">
                 Sobre
-              </a>
+              </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
