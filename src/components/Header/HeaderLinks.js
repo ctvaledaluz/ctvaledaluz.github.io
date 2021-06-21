@@ -73,6 +73,53 @@ export default function HeaderLinks(props) {
             <i className={classes.socialIcons + " fa fa-hands-helping"} /> Como Ajudar
           </Button>
         </Tooltip>
+        <Dialog
+          classes={{
+            root: classes.center,
+            paper: classes.modal,
+          }}
+          open={classicModal}
+          TransitionComponent={Transition}
+          keepMounted
+          onClose={() => setClassicModal(false)}
+          aria-labelledby="classic-modal-slide-title"
+          aria-describedby="classic-modal-slide-description"
+        >
+          <DialogTitle
+            id="classic-modal-slide-title"
+            disableTypography
+            className={classes.modalHeader}
+          >
+            <IconButton
+              className={classes.modalCloseButton}
+              key="close"
+              aria-label="Close"
+              color="inherit"
+              onClick={() => setClassicModal(false)}
+            >
+              <Close className={classes.modalClose} />
+            </IconButton>
+            <h4 className={classes.modalTitle}>Você deseja contribuir?</h4>
+          </DialogTitle>
+          <DialogContent
+            id="classic-modal-slide-description"
+            className={classes.modalBody}
+          >
+            <p>Banco do Brasil</p>
+            <p>Agencia 5214-0</p>
+            <p>Conta Corrente - 7693-7</p>
+            <p>CNPJ 81.140.360/0001-90</p>
+          </DialogContent>
+          <DialogActions className={classes.modalFooter}>
+            <Button
+              onClick={() => setClassicModal(false)}
+              color="info"
+              simple
+            >
+              Fechar
+            </Button>
+          </DialogActions>
+        </Dialog>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
@@ -86,53 +133,6 @@ export default function HeaderLinks(props) {
             color="transparent"
             className={classes.navLink}
           >
-            <Dialog
-              classes={{
-                root: classes.center,
-                paper: classes.modal,
-              }}
-              open={classicModal}
-              TransitionComponent={Transition}
-              keepMounted
-              onClose={() => setClassicModal(false)}
-              aria-labelledby="classic-modal-slide-title"
-              aria-describedby="classic-modal-slide-description"
-            >
-              <DialogTitle
-                id="classic-modal-slide-title"
-                disableTypography
-                className={classes.modalHeader}
-              >
-                <IconButton
-                  className={classes.modalCloseButton}
-                  key="close"
-                  aria-label="Close"
-                  color="inherit"
-                  onClick={() => setClassicModal(false)}
-                >
-                  <Close className={classes.modalClose} />
-                </IconButton>
-                <h4 className={classes.modalTitle}>Você deseja contribuir?</h4>
-              </DialogTitle>
-              <DialogContent
-                id="classic-modal-slide-description"
-                className={classes.modalBody}
-              >
-                <p>Banco do Brasil</p>
-                <p>Agencia 5214-0</p>
-                <p>Conta Corrente - 7693-7</p>
-                <p>CNPJ 81.140.360/0001-90</p>
-              </DialogContent>
-              <DialogActions className={classes.modalFooter}>
-                <Button
-                  onClick={() => setClassicModal(false)}
-                  color="info"
-                  simple
-                >
-                  Fechar
-                </Button>
-              </DialogActions>
-            </Dialog>
             <i className={classes.socialIcons + " fa fa-map-marker"} /> Localização
           </Button>
         </Tooltip>

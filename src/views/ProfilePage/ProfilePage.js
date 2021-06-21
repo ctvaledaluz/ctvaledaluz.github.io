@@ -98,15 +98,14 @@ export default function ProfilePage() {
                 psicoativas da Comunidade Terapêutica Vale da Luz, atende à
                 comunidade de todo território nacional. A instituição atualmente
                 tem 36 (trinta e seis) vagas masculinas para homens da idade de
-                18 a 55 anos.
+                18 a 59 anos.
               </p>
               <h3>Como faço para internar?</h3>
               <h4>Admissão</h4>
               <p>
                 Querer recuperar-se é condição essencial, portanto, só será
                 admitido aquele que se propuser aceitar a participar de todas as
-                atividades contidas no programa. O acolhido deverá trazer
-                avaliação psiquiátrica, exames e demais encaminhamentos.
+                atividades contidas no programa.
               </p>
             </div>
             <WorkSection />
