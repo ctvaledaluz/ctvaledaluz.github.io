@@ -1,8 +1,8 @@
 {
-  "name": "site-ct-vdl",
-  "version": "1.9.0",
+  "name": "ctvaledaluz",
+  "version": "0.0.1",
   "description": "Site da Comunidade Terapêutica Vale da Luz",
-  "homepage": "https://valedaluzct.github.io/site/",
+  "homepage": "https://ctvaledaluz.github.io/",
   "private": false,
   "main": "src/index.js",
   "dependencies": {
@@ -21,8 +21,7 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
     "react-slick": "0.26.1",
-    "react-swipeable-views": "0.13.9",
-    "webpack": "^4.42.0"
+    "react-swipeable-views": "0.13.9"
   },
   "devDependencies": {
     "@babel/cli": "7.10.1",

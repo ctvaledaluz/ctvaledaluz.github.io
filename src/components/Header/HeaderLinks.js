@@ -1,25 +1,21 @@
 /*eslint-disable*/
 import React from "react";
-// react components for routing our app without refresh
-import { Link } from "react-router-dom";
 
-// @material-ui/core components
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
+
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+
 import Tooltip from "@material-ui/core/Tooltip";
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
-import IconButton from "@material-ui/core/IconButton";
-import Close from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
 
-// @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
-
-// core components
+import IconButton from "@material-ui/core/IconButton";
+import Close from "@material-ui/icons/Close";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/site-styles/components/headerLinksStyle.js";
@@ -28,7 +24,7 @@ const useStyles = makeStyles(styles);
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
-export default function HeaderLinks(props) {
+export default function HeaderLinks() {
   const classes = useStyles();
   const [classicModal, setClassicModal] = React.useState(false);
   return (
@@ -108,7 +104,7 @@ export default function HeaderLinks(props) {
             <p>Banco do Brasil</p>
             <p>Agencia 5214-0</p>
             <p>Conta Corrente - 7693-7</p>
-            <p>CNPJ 81.140.360/0001-90</p>
+            <p>PIX - 81.140.360/0001-90</p>
           </DialogContent>
           <DialogActions className={classes.modalFooter}>
             <Button
