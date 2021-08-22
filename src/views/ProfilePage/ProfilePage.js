@@ -89,7 +89,7 @@ export default function ProfilePage() {
                 admitido aquele que se propuser aceitar a participar de todas as
                 atividades contidas no programa.
               </p>
-              <h3>Permanẽncia</h3>
+              <h3>Permanência</h3>
               <p className={classes.paragraph}>
                 Na Comunidade Terapêutica Vale da Luz, todas as atividades
                 desenvolvidas são baseadas no respeito à dignidade da pessoa
