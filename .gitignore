@@ -32,3 +32,4 @@ yarn-error.log*
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/site.iml
 /.idea/vcs.xml
+/.idea/

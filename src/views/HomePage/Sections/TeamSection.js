@@ -63,8 +63,8 @@ export default function TeamSection() {
               <CardBody>
                 <p className={classes.description}>
                   Investimento em tecnologias de monitoramento em toda área
-                  comum do sítio para manter a segurança de acolhidos e
-                  monitores.
+                  comum da comunidade terapêutica para manter a segurança tanto
+                  de acolhidos como da equipe.
                 </p>
               </CardBody>
             </Card>

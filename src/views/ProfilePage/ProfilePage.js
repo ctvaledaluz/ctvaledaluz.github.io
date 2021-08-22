@@ -43,48 +43,30 @@ export default function ProfilePage() {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>
+                    <h2 className={classes.title}>
                       Comunidade Terapêutica Vale da Luz
-                    </h3>
-                    <h6>Joinville - SC</h6>
+                    </h2>
+                    <h5>Joinville - SC</h5>
                   </div>
                 </div>
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
-              <p>
+              <p className={classes.paragraph}>
                 Por volta de 1988, Pastores e membros da Igreja do Evangelho
-                Quadrangular, organizam-se através de uma ONG, a SASIEQ -
-                Serviço de Ação Social, Integração, Educação e Qualidade.
-                Entidade sem fins lucrativos, de caráter filantrópico, fundada
-                em 31/01/89, por Pastores e membros da Igreja do Evangelho
-                Quadrangular da cidade de Joinville/SC, onde desenvolvem varias
-                ações de cunho assistencial. Uma delas é a construção da
-                Comunidade Terapêutica, “Vale da Luz” , que tem como objetivo o
-                acolhimento de dependentes químicos, localizada na estrada do
-                Salto ao lado da hidroelétrica da Celesc – Central Elétrica de
-                Santa Catarina. Na Comunidade Terapêutica - localizadas na
-                estrada do Salto Alto I – Vila Nova. Os acolhidos que realizam o
-                programa de recuperação na unidade, permanecem em sistema de
-                internação por um período de 9(nove) meses e o acolhimento se dá
-                nos seguintes eixos:
-                <p>Resgate de Dignidade</p>
-                <p>Resgate e fortalecimento da cidadania</p>
-                <p>Fortalecimento de vínculos familiares e comunitário</p>
-                <p>Atividades diárias</p>
-                <p>Disciplina</p>
-                <p>
-                  Oportunidade para inclusão social através de cursos
-                  profissionalizante
-                </p>
-                <p>
-                  Incentivo e acompanhamento da reinserção social e no mercado
-                  de trabalho
-                </p>
-                <p>Gestão Técnica Multidisciplinar</p>
+                Quadrangular organizam-se através de uma OSC (Organização da
+                Sociedade Civil), a SASIEQ - Serviço Serviço de Ação Social,
+                Integração, Educação e Qualidade - instituição sem fins
+                lucrativos, de caráter filantrópico, fundada em 11/01/1990, na
+                cidade de Joinville/SC, onde desenvolvem várias ações de cunho
+                assistencial. Uma delas é a construção da Comunidade
+                Terapêutica, “Vale da Luz”. Na Comunidade Terapêutica -
+                localizada na estrada do Salto Alto I, Vila Nova - os acolhidos
+                que realizam o programa de recuperação na unidade permanecem em
+                sistema de acolhimento residencial.
               </p>
               <h3>Objetivos</h3>
-              <p>
+              <p className={classes.paragraph}>
                 Promover ações especializadas de inclusão e/ou reinclusão social
                 dependente/ de drogas psicoativas, provocando mudanças de
                 valores, com humanização e desenvolvimento de potencialidades
@@ -93,19 +75,34 @@ export default function ProfilePage() {
                 situações de risco, exclusão e o isolamento social.
               </p>
               <h3>Público-alvo</h3>
-              <p>
-                Os programas de atendimento aos usuários de substancias
+              <p className={classes.paragraph}>
+                Os programas de atendimento aos usuários de substâncias
                 psicoativas da Comunidade Terapêutica Vale da Luz, atende à
                 comunidade de todo território nacional. A instituição atualmente
-                tem 36 (trinta e seis) vagas masculinas para homens da idade de
-                18 a 59 anos.
+                tem 36 (trinta e seis) vagas para homens da idade de 18 a 59
+                anos.
               </p>
-              <h3>Como faço para internar?</h3>
+              <h3>Como faço para iniciar o processo de recuperação?</h3>
               <h4>Admissão</h4>
-              <p>
+              <p className={classes.paragraph}>
                 Querer recuperar-se é condição essencial, portanto, só será
                 admitido aquele que se propuser aceitar a participar de todas as
                 atividades contidas no programa.
+              </p>
+              <h3>Permanẽncia</h3>
+              <p className={classes.paragraph}>
+                Na Comunidade Terapêutica Vale da Luz, todas as atividades
+                desenvolvidas são baseadas no respeito à dignidade da pessoa
+                humana. É assegurado um ambiente livre de tabaco, álcool, drogas
+                e violência. Todas as atividades são orientadas por uma equipe
+                técnica capacitada. Promovemos o desenvolvimento pessoal,
+                buscando a construção um novo estilo de vida, conscientizando os
+                acolhidos sobre dependência química, promovendo a inserção ou
+                reinserção do usuário no mercado de trabalho, auxíliando no
+                desenvolvimento de habilidades para superação de padrões
+                comportamentais nocivos para si mesmo e/ou para outros,
+                reconhecenndo a espiritualidade como processo de
+                autoconhecimento sem a imposição de crenças religiosas.
               </p>
             </div>
             <WorkSection />

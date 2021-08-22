@@ -36,7 +36,7 @@ export default function HeaderLinks() {
           classes={{ tooltip: classes.tooltip }}
         >
           <Link to="/" className={classes.navLink}>
-            <Button color="transparent" size="sm" style={{margin: 0,  padding: 0}}>
+            <Button color="transparent" size="sm" style={{margin: 0,  padding: 0, fontSize: "14px"}}>
               <i className={classes.socialIcons + " fa fa-home"} /> Página Principal
             </Button>
           </Link>
@@ -49,7 +49,7 @@ export default function HeaderLinks() {
           classes={{ tooltip: classes.tooltip }}
         >
           <Link to="/history" className={classes.navLink}>
-            <Button color="transparent" size="sm" style={{margin: 0,  padding: 0}}>
+            <Button color="transparent" size="sm" style={{margin: 0,  padding: 0, fontSize: "14px"}}>
               <i className={classes.socialIcons + " fa fa-book"} /> Sobre
             </Button>
           </Link>

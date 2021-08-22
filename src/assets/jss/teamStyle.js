@@ -24,6 +24,7 @@ const teamStyle = {
   },
   description: {
     color: "#999",
+    fontSize: "16px",
   },
   justifyCenter: {
     justifyContent: "center !important",

@@ -33,11 +33,7 @@ export default function HomePage() {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>C.T. Vale da Luz</h1>
-              <h4>
-                Promovemos ações especializadas de inclusão social do
-                usuário/dependente de drogas psicoativas, provocando mudanças de
-                valores, com humanização e desenvolvimento pessoal.
-              </h4>
+              <h2>Podemos ajudar a encontrar um caminho de vida melhor.</h2>
               <br />
             </GridItem>
           </GridContainer>
