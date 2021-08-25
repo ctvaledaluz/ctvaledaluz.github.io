@@ -98,11 +98,11 @@ export default function ProfilePage() {
                 técnica capacitada. Promovemos o desenvolvimento pessoal,
                 buscando a construção um novo estilo de vida, conscientizando os
                 acolhidos sobre dependência química, promovendo a inserção ou
-                reinserção do usuário no mercado de trabalho, auxíliando no
+                reinserção dos acolhidos no mercado de trabalho, auxíliando no
                 desenvolvimento de habilidades para superação de padrões
                 comportamentais nocivos para si mesmo e/ou para outros,
-                reconhecenndo a espiritualidade como processo de
-                autoconhecimento sem a imposição de crenças religiosas.
+                reconhecendo a espiritualidade como processo de autoconhecimento
+                sem a imposição de crenças religiosas.
               </p>
             </div>
             <WorkSection />
