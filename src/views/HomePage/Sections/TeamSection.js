@@ -15,8 +15,8 @@ import CardBody from "components/Card/CardBody.js";
 import styles from "assets/jss/teamStyle";
 
 import monitor from "assets/img/monitoramento.jpg";
-import atend from "assets/img/atendimento.jpg";
-import invest from "assets/img/investimento.jpg";
+import atend from "assets/img/atendimento.webp";
+import invest from "assets/img/investimento.webp";
 
 const useStyles = makeStyles(styles);
 
@@ -44,8 +44,8 @@ export default function TeamSection() {
               <h4 className={classes.cardTitle}>Acompanhamento Técnico</h4>
               <CardBody>
                 <p className={classes.description}>
-                  Investimos constantemente em treinamento e melhorias para
-                  atender com excelência.
+                  Investimos constantemente em treinamento de equipe e melhorias
+                  na estrutura para alcançar excelência em atendimento.
                 </p>
               </CardBody>
             </Card>
@@ -77,8 +77,9 @@ export default function TeamSection() {
               <h4 className={classes.cardTitle}>Estrutura</h4>
               <CardBody>
                 <p className={classes.description}>
-                  Investimos na formação de um caráter renovado utilizando
-                  ferramentas atuais além do cuidado pessoal.
+                  Investimos na formação de um caráter renovado utilizando as
+                  mlehores tendências em ferramentas psicoterapêuticas, bem como
+                  cuidado pessoal.
                 </p>
               </CardBody>
             </Card>
