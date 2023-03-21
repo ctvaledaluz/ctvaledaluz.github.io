@@ -7,7 +7,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
-import WorkSection from "../HomePage/Sections/WorkSection";
+import WorkSection from "../HomePage/Sections/InfoSection";
 
 import profile from "assets/img/apple-icon.png";
 import styles from "assets/jss/site-styles/views/profilePage";

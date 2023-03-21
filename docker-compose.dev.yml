@@ -1,6 +1,9 @@
 version: '3'
+
 services:
+
   site-app:
+    container_name: site-app
     stdin_open: true
     environment:
       - CHOKIDAR_USEPOLLING=true
@@ -12,7 +15,9 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
+
   site-test:
+    container_name: site-test
     stdin_open: true
     build:
       context: .

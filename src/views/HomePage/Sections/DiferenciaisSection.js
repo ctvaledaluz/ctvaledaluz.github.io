@@ -20,7 +20,7 @@ import invest from "assets/img/investimento.webp";
 
 const useStyles = makeStyles(styles);
 
-export default function TeamSection() {
+export default function DiferenciaisSection() {
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
