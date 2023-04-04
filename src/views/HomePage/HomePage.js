@@ -9,9 +9,9 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/site-styles/views/HomePage.js";
 import VisaoGeralSection from "./Sections/VisaoGeralSection.js";
-import LocalSection from "./Sections/LocalSection.js";
-import TeamSection from "./Sections/TeamSection.js";
-import WorkSection from "./Sections/WorkSection";
+import CarouselSection from "./Sections/CarouselSection.js";
+import DiferenciaisSection from "./Sections/DiferenciaisSection.js";
+import InfoSection from "./Sections/InfoSection.js";
 
 const useStyles = makeStyles(styles);
 
@@ -44,11 +44,11 @@ export default function HomePage() {
           <VisaoGeralSection />
         </div>
       </div>
-      <LocalSection />
+      <CarouselSection />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <TeamSection />
-          <WorkSection />
+          <DiferenciaisSection />
+          <InfoSection />
         </div>
       </div>
       <Footer />
