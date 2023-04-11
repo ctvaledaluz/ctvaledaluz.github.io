@@ -1,10 +1,10 @@
-import CustomCards from "../components/root/cards";
-import RootHeading from "../components/root/heading";
 import Hero from "../components/root/hero";
-import Senapred from "../components/root/senapred";
+import RootHeading from "../components/root/heading";
 import PitchPlayer from "../components/root/videoplayer";
-// import Carousel from "../components/root/carousel";
-import TextoTeste from "../components/testes/texto";
+import Senapred from "../components/root/senapred";
+import CustomCards from "../components/root/cards";
+import Features from "../components/root/features";
+import CallToAction from "../components/root/callToAction";
 
 export default function Root() {
   return (
@@ -14,7 +14,8 @@ export default function Root() {
       <PitchPlayer />
       <Senapred />
       <CustomCards />
-      <TextoTeste />
+      <Features />
+      <CallToAction />
     </>
   );
 }
