@@ -6,7 +6,7 @@ export default class Video extends Component {
   render() {
     return (
       <Center>
-        <Box className="player-wrapper" w={[360, 600, 1000]}>
+        <Box className="player-wrapper" w={[360, 600, 1000]} shadow={"md"}>
           <ReactPlayer
             className="react-player fixed-bottom"
             url="pitch.webm"
