@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import {
   Box,
   Flex,
@@ -27,10 +29,12 @@ export default function Nav() {
         justifyContent={"space-between"}
       >
         <SiteMenu />
-        <HStack>
-          <Image boxSize={"10"} borderRadius="full" src={logo}></Image>
-          <Text>Vale da Luz</Text>
-        </HStack>
+        <Link to="/">
+          <HStack>
+            <Image boxSize={"10"} borderRadius="full" src={logo}></Image>
+            <Text>Vale da Luz</Text>
+          </HStack>
+        </Link>
         <Flex alignItems={"center"}>
           <Stack direction={"row"} spacing={7}>
             <Pix />

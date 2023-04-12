@@ -18,6 +18,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import pix from "../../assets/images/pix.webp";
+import { Link } from "react-router-dom";
 
 export default function Pix() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -54,9 +55,11 @@ export default function Pix() {
             <Image src={pix}></Image>
           </ModalBody>
           <ModalFooter display={"flex"} justifyContent={"center"}>
-            <Button variant={"solid"} colorScheme="teal">
-              Outras formas
-            </Button>
+            <Link to="/help">
+              <Button onClick={onClose} variant={"solid"} colorScheme="teal">
+                Outras formas
+              </Button>
+            </Link>
             <Spacer />
             <Button onClick={onClose} variant={"outline"} colorScheme="teal">
               Fechar

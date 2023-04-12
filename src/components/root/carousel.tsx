@@ -41,8 +41,8 @@ export default class Fade extends Component {
     return (
       <Container maxW="6xl" paddingTop={10}>
         <Slider {...settings}>
-          {cards.map((card, index) => (
-            <Box key={index} position="relative">
+          {cards.map((card, i) => (
+            <Box key={i} position="relative">
               <Image src={card} rounded={"xl"} />
             </Box>
           ))}
