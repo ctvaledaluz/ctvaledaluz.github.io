@@ -1,10 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Nav from "./components/template/navbar";
-import TextoTeste from "./components/testes/texto";
+import Footer from "./components/template/footer";
+
 import Root from "./routes/root";
 import About from "./routes/about";
-import Footer from "./components/template/footer";
+import Help from "./routes/help";
+import "./App.css";
 
 export default function App() {
   return (
@@ -15,7 +17,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Root />} />
             <Route path="about" element={<About />} />
-            <Route path="help" element={<TextoTeste />} />
+            <Route path="help" element={<Help />} />
           </Routes>
         </BrowserRouter>
         <Footer />

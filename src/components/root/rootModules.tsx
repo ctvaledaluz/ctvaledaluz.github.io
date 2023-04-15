@@ -9,6 +9,14 @@ import {
   chakra,
 } from "@chakra-ui/react";
 
+import CustomButton from "../template/customButton";
+
+import { FaFingerprint, FaHandsHelping, FaHome } from "react-icons/fa";
+
+interface requiredButtonProps {
+  type: string;
+}
+
 export const CardContainer = ({ children }: { children: ReactNode }) => {
   return <Box maxWidth={"sm"}>{children}</Box>;
 };
@@ -96,4 +104,36 @@ export const SocialButton = ({
       {children}
     </chakra.button>
   );
+};
+
+export const RequiredButton = ({ type }: requiredButtonProps) => {
+  switch (type) {
+    case "a":
+      return (
+        <CustomButton
+          route="/about"
+          icon={<FaFingerprint />}
+          text="Quem somos"
+        />
+      );
+    case "h":
+      return (
+        <CustomButton
+          route="/help"
+          icon={<FaHandsHelping />}
+          text="Como Ajudar"
+        />
+      );
+    case "r":
+      return (
+        <CustomButton
+          route="/"
+          icon={<FaHome />}
+          text="Página Inicial"
+          //quebra de linha no código
+        />
+      );
+    default:
+      return <></>;
+  }
 };

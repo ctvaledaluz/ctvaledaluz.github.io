@@ -1,3 +1,11 @@
+import Carousel from "../components/root/carousel";
+import Hero from "../components/template/hero";
+
 export default function About() {
-  return <h1>Sobre</h1>;
+  return (
+    <>
+      <Hero bg="" title="Histórico e Trabalhos Desenvolvidos" type="h" />
+      <Carousel />
+    </>
+  );
 }
