@@ -24,7 +24,7 @@ export default function Features() {
       id: 3,
       image: card3,
       title: "Estrutura",
-      text: "Investimos na formação de um caráter renovado utilizando as mlehores tendências em ferramentas psicoterapêuticas, bem como cuidado pessoal.",
+      text: "Investimos na formação de um caráter renovado utilizando as melhores tendências em ferramentas psicoterapêuticas aliadas ao atendimento individualizado.",
     },
   ];
   return (

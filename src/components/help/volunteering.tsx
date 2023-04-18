@@ -41,7 +41,7 @@ export default function Volunteering() {
       title: "Materiais de higiene e limpeza",
       icon: MdCleanHands,
       content:
-        "Contribua com alimentos para garantir uma alimentação adequada aos residentes da Comunidade Terapêutica Vale da Luz.",
+        "Contribua com materiais de limpeza e higiene pessoal para maior qualidade de vida dos residentes da Comunidade Terapêutica Vale da Luz.",
     },
     {
       id: 5,
