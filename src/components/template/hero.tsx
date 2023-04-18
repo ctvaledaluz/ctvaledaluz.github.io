@@ -6,17 +6,25 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 
-import CustomAvatar from "./avatar";
-import WhatButton from "./whatsButton";
-import AboutButton from "./aboutButton";
+import { RequiredButton } from "../root/rootModules";
 
-export default function Hero() {
+import CustomAvatar from "./avatar";
+import WhatButton from "../template/whatsButton";
+
+interface HeroProps {
+  bg: string;
+  title: string;
+  type: string;
+  target?: string;
+}
+
+export default function Hero({ bg, title, type }: HeroProps) {
   return (
     <>
       <Flex
         w={"full"}
         h={"65vh"}
-        bgImage={"url(src/assets/images/head-img.webp)"}
+        bgImage={bg}
         bgSize={"cover"}
         bgPosition={"center center"}
         borderBottom="2px solid black"
@@ -34,10 +42,10 @@ export default function Hero() {
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: "3xl", md: "5xl" })}
             >
-              Comunidade Terapêutica Vale da Luz
+              {title}
             </Text>
             <Stack direction={"row"}>
-              <AboutButton />
+              <RequiredButton type={type} />
               <WhatButton />
             </Stack>
           </Stack>

@@ -12,7 +12,7 @@ import card8 from "../../assets/images/carousel/8.png";
 import card9 from "../../assets/images/carousel/9.png";
 import card10 from "../../assets/images/carousel/10.png";
 
-export default class Fade extends Component {
+export default class Carousel extends Component {
   render() {
     const settings = {
       dots: true,

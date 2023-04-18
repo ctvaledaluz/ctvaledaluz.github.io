@@ -1,6 +1,12 @@
-import { Box, VStack, Image, Text, useColorModeValue } from "@chakra-ui/react";
-
-import logo from "../../assets/images/governo-federal.png";
+import {
+  Box,
+  VStack,
+  Image,
+  Text,
+  useColorModeValue,
+  Center,
+} from "@chakra-ui/react";
+import WhatButton from "../template/whatsButton";
 
 export default function Senapred() {
   return (
@@ -12,20 +18,16 @@ export default function Senapred() {
         shadow={"md"}
       >
         <Box>
-          <Text fontSize="2xl" align={"center"}>
-            Temos vagas gratuitas financiadas pelos governos
+          <Text fontSize="4xl" align={"center"}>
+            Temos vagas gratuitas
           </Text>
           <Text fontSize="2xl" align={"center"}>
-            Estadual (Programa Reviver) e Federal (SENAPRED)
+            financiadas pelos governos Estadual (Programa Reviver) e Federal
           </Text>
+          <Center pt={10}>
+            <WhatButton />
+          </Center>
         </Box>
-        <Image
-          boxSize={"xl"}
-          objectFit="contain"
-          height={"50%"}
-          src={logo}
-          alt="Governo Federal"
-        />
       </Box>
     </VStack>
   );

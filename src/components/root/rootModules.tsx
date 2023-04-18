@@ -7,7 +7,22 @@ import {
   useColorModeValue,
   VisuallyHidden,
   chakra,
+  Image,
 } from "@chakra-ui/react";
+
+import CustomButton from "../template/customButton";
+
+import { FaFingerprint, FaHandsHelping, FaHome } from "react-icons/fa";
+
+interface requiredButtonProps {
+  type: string;
+}
+
+interface SplitProps {
+  title: string;
+  text: string;
+  icon: string;
+}
 
 export const CardContainer = ({ children }: { children: ReactNode }) => {
   return <Box maxWidth={"sm"}>{children}</Box>;
@@ -95,5 +110,57 @@ export const SocialButton = ({
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
     </chakra.button>
+  );
+};
+
+export const RequiredButton = ({ type }: requiredButtonProps) => {
+  switch (type) {
+    case "a":
+      return (
+        <CustomButton
+          route="/about"
+          icon={<FaFingerprint />}
+          text="Quem somos"
+        />
+      );
+    case "h":
+      return (
+        <CustomButton
+          route="/help"
+          icon={<FaHandsHelping />}
+          text="Como Ajudar"
+        />
+      );
+    case "r":
+      return (
+        <CustomButton
+          route="/"
+          icon={<FaHome />}
+          text="Página Inicial"
+          //quebra de linha no código
+        />
+      );
+    default:
+      return <></>;
+  }
+};
+
+export const Feature = ({ title, text, icon }: SplitProps) => {
+  return (
+    <Stack align={"center"} paddingTop={10}>
+      <Box boxSize="60">
+        <Image rounded={"xl"} src={icon} shadow={"xl"} />
+      </Box>
+      <Heading size={"md"} fontWeight={600} paddingTop={10}>
+        {title}
+      </Heading>
+      <Text
+        align={"center"}
+        padding={10}
+        color={useColorModeValue("gray.700", "gray.100")}
+      >
+        {text}
+      </Text>
+    </Stack>
   );
 };
