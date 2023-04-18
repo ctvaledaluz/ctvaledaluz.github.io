@@ -7,6 +7,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
   chakra,
+  Image,
 } from "@chakra-ui/react";
 
 import CustomButton from "../template/customButton";
@@ -15,6 +16,12 @@ import { FaFingerprint, FaHandsHelping, FaHome } from "react-icons/fa";
 
 interface requiredButtonProps {
   type: string;
+}
+
+interface SplitProps {
+  title: string;
+  text: string;
+  icon: string;
 }
 
 export const CardContainer = ({ children }: { children: ReactNode }) => {
@@ -136,4 +143,24 @@ export const RequiredButton = ({ type }: requiredButtonProps) => {
     default:
       return <></>;
   }
+};
+
+export const Feature = ({ title, text, icon }: SplitProps) => {
+  return (
+    <Stack align={"center"} paddingTop={10}>
+      <Box boxSize="60">
+        <Image rounded={"xl"} src={icon} shadow={"xl"} />
+      </Box>
+      <Heading size={"md"} fontWeight={600} paddingTop={10}>
+        {title}
+      </Heading>
+      <Text
+        align={"center"}
+        padding={10}
+        color={useColorModeValue("gray.700", "gray.100")}
+      >
+        {text}
+      </Text>
+    </Stack>
+  );
 };

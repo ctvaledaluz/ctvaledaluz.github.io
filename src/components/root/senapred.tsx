@@ -1,4 +1,12 @@
-import { Box, VStack, Image, Text, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  VStack,
+  Image,
+  Text,
+  useColorModeValue,
+  Center,
+} from "@chakra-ui/react";
+import WhatButton from "../template/whatsButton";
 
 export default function Senapred() {
   return (
@@ -16,6 +24,9 @@ export default function Senapred() {
           <Text fontSize="2xl" align={"center"}>
             financiadas pelos governos Estadual (Programa Reviver) e Federal
           </Text>
+          <Center pt={10}>
+            <WhatButton />
+          </Center>
         </Box>
       </Box>
     </VStack>

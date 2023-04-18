@@ -39,7 +39,6 @@ export default function Footer() {
       link: "https://www.google.com.br/maps/place/Comunidade+Terap%C3%AAutica+Vale+da+Luz/@-26.2971789,-49.0353388,2866m/data=!3m1!1e3!4m5!3m4!1s0x0:0x25c0a454a236bc26!8m2!3d-26.2951575!4d-49.0139072?shorturl=1",
     },
   ];
-  console.table(footerIcons);
 
   return (
     <Box

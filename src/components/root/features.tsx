@@ -1,6 +1,6 @@
 import { Box, Center, Heading, SimpleGrid } from "@chakra-ui/react";
 
-import { Feature } from "./split";
+import { Feature } from "./rootModules";
 
 import card1 from "../../assets/images/card1.webp";
 import card2 from "../../assets/images/card2.webp";
