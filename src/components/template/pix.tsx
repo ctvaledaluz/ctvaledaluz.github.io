@@ -3,7 +3,6 @@ import {
   Avatar,
   Button,
   IconButton,
-  Image,
   Menu,
   MenuButton,
   Modal,
@@ -17,20 +16,16 @@ import {
   Text,
   useColorMode,
   useDisclosure,
-  Center, background,
+  Center
 } from "@chakra-ui/react";
 import pix from "../../assets/images/pix.webp";
 import { Link } from "react-router-dom";
 import useCopyToClipboard from "../../hooks/clipboardHook"
 
-type CopiedValue = string | null
-type CopyFn = (text: string) => Promise<boolean>
-
 export default function Pix() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode } = useColorMode();
   const [isShown, setIsShown] = useState(false);
-  const [value, copy] = useCopyToClipboard()
   const data = [
     {
       id: 1,
@@ -78,9 +73,6 @@ export default function Pix() {
                     onMouseLeave={() => setIsShown(false)}
                     bg={isShown ? "teal.200" : "transparent"}
                     cursor={isShown ? "pointer" : "none" }
-                    onClick={() => {
-                      return copy('81140360000190');
-                    }}
                 >{c.text2}
               </Text>
             </ModalBody>
