@@ -20,7 +20,6 @@ import {
 } from "@chakra-ui/react";
 import pix from "../../assets/images/pix.webp";
 import { Link } from "react-router-dom";
-import useCopyToClipboard from "../../hooks/clipboardHook"
 
 export default function Pix() {
   const { isOpen, onOpen, onClose } = useDisclosure();
