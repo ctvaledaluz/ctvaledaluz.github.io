@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import {
   Avatar,
   Button,
@@ -16,20 +17,26 @@ import {
   Text,
   useColorMode,
   useDisclosure,
-  Center,
+  Center, background,
 } from "@chakra-ui/react";
 import pix from "../../assets/images/pix.webp";
 import { Link } from "react-router-dom";
+import useCopyToClipboard from "../../hooks/clipboardHook"
+
+type CopiedValue = string | null
+type CopyFn = (text: string) => Promise<boolean>
 
 export default function Pix() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode } = useColorMode();
+  const [isShown, setIsShown] = useState(false);
+  const [value, copy] = useCopyToClipboard()
   const data = [
     {
       id: 1,
       title: "Você pode ajudar com um PIX",
       text1: "Nosso QRCode:",
-      text2: "Chave PIX: 81.140.360/0001-90",
+      text2: "Chave CNPJ: 81.140.360/0001-90",
       button1: "Outras formas",
       button2: "Fechar",
       image: pix,
@@ -64,9 +71,18 @@ export default function Pix() {
             </ModalHeader>
             <ModalCloseButton />
             <ModalBody>
-              <Text align="center">{c.text1}</Text>
-              <Image src={c.image} />
-              <Text as={Center}>{c.text2}</Text>
+              {/*<Text align="center">{c.text1}</Text>*/}
+              {/*<Image src={c.image} />*/}
+              <Text as={Center}
+                    onMouseEnter={() => setIsShown(true)}
+                    onMouseLeave={() => setIsShown(false)}
+                    bg={isShown ? "teal.200" : "transparent"}
+                    cursor={isShown ? "pointer" : "none" }
+                    onClick={() => {
+                      return copy('81140360000190');
+                    }}
+                >{c.text2}
+              </Text>
             </ModalBody>
             <ModalFooter display={"flex"} justifyContent={"center"}>
               <Link to="/help">
