@@ -25,7 +25,6 @@ import {
   FaFacebook,
   FaInstagram,
   FaMapMarkedAlt,
-  FaMapMarked,
   FaBlog,
 } from "react-icons/fa";
 
@@ -138,7 +137,7 @@ export default function SiteMenu() {
                 </Button>
               </Link>
               <Divider />
-              <Link to="#">
+              <Link to="https://blog.valedaluz.com.br/">
                 <Button
                   leftIcon={<FaBlog />}
                   variant="ghost"
@@ -146,7 +145,7 @@ export default function SiteMenu() {
                   w="100%"
                   onClick={isOpen ? onClose : onOpen}
                 >
-                  Blog (em breve)
+                  Blog Vale da Luz
                 </Button>
               </Link>
             </Box>

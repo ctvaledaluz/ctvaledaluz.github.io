@@ -14,7 +14,7 @@ export default function RootHeading() {
             SASIEQ (Serviço de Ação Social, Integração, Educação e Qualidade)
           </b>{" "}
           de Joinville - SC e tem como objetivo o acolhimento e reabilitação de
-          dependentes qímicos, usuários de álcool e drogas.
+          dependentes químicos, usuários de álcool e drogas.
         </Text>
         <Text fontSize={{ base: "sm", sm: "lg" }}>
           {" "}
