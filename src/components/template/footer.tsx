@@ -12,7 +12,7 @@ import {
   FaWhatsapp,
   FaFacebook,
   FaInstagram,
-  FaMapMarkerAlt,
+  FaMapMarkerAlt, FaBlog,
 } from "react-icons/fa";
 
 export default function Footer() {
@@ -32,6 +32,11 @@ export default function Footer() {
       label: "Instagram",
       icon: FaInstagram,
       link: "https://www.instagram.com/valedaluzct/",
+    },
+    {
+      label: "Blog",
+      icon: FaBlog,
+      link: "https://blog.valedaluz.com.br/",
     },
     {
       label: "Localização",
