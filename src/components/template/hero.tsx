@@ -10,6 +10,8 @@ import { RequiredButton } from "../root/rootModules";
 
 import CustomAvatar from "./avatar";
 import WhatButton from "../template/whatsButton";
+import CustomButton from "./customButton";
+import {FaBlog} from "react-icons/fa";
 
 interface HeroProps {
   bg: string;
@@ -47,6 +49,11 @@ export default function Hero({ bg, title, type }: HeroProps) {
             <Stack direction={"row"}>
               <RequiredButton type={type} />
               <WhatButton />
+              <CustomButton
+                icon={<FaBlog />}
+                route={"http://blog.valedaluz.com.br/"}
+                text={"Blog"}
+              />
             </Stack>
           </Stack>
         </VStack>
