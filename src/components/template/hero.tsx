@@ -51,7 +51,7 @@ export default function Hero({ bg, title, type }: HeroProps) {
               <WhatButton />
               <CustomButton
                 icon={<FaBlog />}
-                route={"http://blog.valedaluz.com.br"}
+                route={"http://blog.valedaluz.com.br/"}
                 text={"Blog"}
               />
             </Stack>
