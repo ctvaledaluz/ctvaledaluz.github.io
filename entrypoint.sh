@@ -3,5 +3,3 @@
 npm rebuild esbuild
 
 exec "$@"
-
-echo "ok" 
