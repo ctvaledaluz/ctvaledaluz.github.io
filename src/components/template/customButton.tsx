@@ -9,9 +9,7 @@ interface CustomButtonProps {
 
 export default function CustomButton({ route, icon, text }: CustomButtonProps) {
   return (
-    <Link to={route}
-          target={"_blank"}
-    >
+    <Link to={route}>
       <Button
         leftIcon={icon}
         bg={"teal.700"}
