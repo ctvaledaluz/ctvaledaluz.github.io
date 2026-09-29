@@ -1,4 +1,4 @@
-FROM node:hydrogen-alpine
+FROM node:20-alpine
 
 WORKDIR '/app'
 
@@ -9,6 +9,10 @@ RUN chmod +x /entrypoint.sh
 ADD . .
 
 RUN npm install
+
+ENV NODE_ENV=development
+
+EXPOSE 3000
 
 ENTRYPOINT [ "/entrypoint.sh" ]
 
