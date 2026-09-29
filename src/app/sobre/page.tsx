@@ -96,15 +96,15 @@ export default function AboutPage() {
       </section>
 
       <section className="section bg-gray-100">
-        <div className="container-page">
+        <div className="mx-auto max-w-[880px] px-4 sm:px-6 lg:px-8">
           <h2 className="text-center text-2xl font-bold sm:text-3xl">
             Ambientes Comunitários
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-center text-gray-700">
+          <p className="mx-auto mt-4 text-center text-gray-700">
             Conheça a nossa estrutura e os ambientes da Comunidade Terapêutica
             Vale da Luz, conforme o portfólio &quot;Local e Estrutura 2024&quot;.
           </p>
-          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
             {GALLERY.map((item) => (
               <a
                 key={item.src}
@@ -117,10 +117,10 @@ export default function AboutPage() {
                 <Image
                   src={item.src}
                   alt={item.alt}
-                  width={1200}
-                  height={1697}
+                  width={794}
+                  height={1119}
                   loading="lazy"
-                  className="h-full w-full object-cover"
+                  className="h-auto w-full"
                 />
               </a>
             ))}
