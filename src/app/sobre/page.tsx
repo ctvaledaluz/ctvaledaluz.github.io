@@ -19,10 +19,13 @@ export const metadata: Metadata = {
   },
 };
 
-const GALLERY = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"].map((n) => ({
-  src: `/carousel/${n}.png`,
-  alt: `Registro de atividade da Comunidade Terapêutica Vale da Luz ${n}`,
-}));
+const GALLERY = Array.from({ length: 14 }, (_, i) => {
+  const n = String(i + 1).padStart(2, "0");
+  return {
+    src: `/ambientes/pg-${n}.webp`,
+    alt: `Ambiente da Comunidade Terapêutica Vale da Luz — página ${i + 1} do portfólio Local e Estrutura 2024`,
+  };
+});
 
 const PILLARS = [
   {
@@ -95,22 +98,31 @@ export default function AboutPage() {
       <section className="section bg-gray-100">
         <div className="container-page">
           <h2 className="text-center text-2xl font-bold sm:text-3xl">
-            Registros de atividades
+            Ambientes Comunitários
           </h2>
-          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          <p className="mx-auto mt-4 max-w-3xl text-center text-gray-700">
+            Conheça a nossa estrutura e os ambientes da Comunidade Terapêutica
+            Vale da Luz, conforme o portfólio &quot;Local e Estrutura 2024&quot;.
+          </p>
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {GALLERY.map((item) => (
-              <div
+              <a
                 key={item.src}
-                className="aspect-square overflow-hidden rounded-lg shadow"
+                href={item.src}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={item.alt}
+                className="block overflow-hidden rounded-lg shadow transition-transform hover:scale-105"
               >
                 <Image
                   src={item.src}
                   alt={item.alt}
-                  width={400}
-                  height={400}
-                  className="h-full w-full object-cover transition-transform hover:scale-105"
+                  width={1200}
+                  height={1697}
+                  loading="lazy"
+                  className="h-full w-full object-cover"
                 />
-              </div>
+              </a>
             ))}
           </div>
         </div>
